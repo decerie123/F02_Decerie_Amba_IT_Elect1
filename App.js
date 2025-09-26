@@ -1,27 +1,20 @@
-// App.js
-import React from 'react';
-import { SafeAreaView, ScrollView, StyleSheet } from 'react-native';
-import CounterApp from './CounterApp';
-import ColorChangerApp from './ColorChangerApp';
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
-    <SafeAreaView style={styles.safeArea}>
-      <ScrollView contentContainerStyle={styles.container}>
-        <CounterApp />
-        <ColorChangerApp />
-      </ScrollView>
-    </SafeAreaView>
+    <View style={styles.container}>
+      <Text>Decerie Amba</Text>
+      <StatusBar style="auto" />
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
-  safeArea: {
-    flex: 1,
-    backgroundColor: '#f5f5f5',
-  },
   container: {
-    padding: 20,
-    gap: 40,
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });
